@@ -4,7 +4,6 @@ import { MantineProvider } from '@mantine/core';
 import { beforeEach, afterEach, test, expect, vi } from 'vitest';
 import App from './App';
 
-// Мок для matchMedia (Mantine)
 beforeEach(() => {
   Object.defineProperty(window, 'matchMedia', {
     writable: true,
@@ -20,7 +19,6 @@ beforeEach(() => {
     })),
   });
 
-  // Создаём контейнер для портала
   const modalRoot = document.createElement('div');
   modalRoot.setAttribute('id', 'modal-root');
   document.body.appendChild(modalRoot);

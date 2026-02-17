@@ -1,9 +1,9 @@
 import { createContext, useContext } from "react";
-import type { Launches } from "./types"; // предполагаем, что тип называется Launch
+import type { Launches } from "./types"; 
 
 interface AppContextValue {
     launches: Launches[];
-    openModal: (launch: Launches) => void; // новая функция
+    openModal: (launch: Launches) => void; 
 }
 
 export const AppContext = createContext({} as AppContextValue);

@@ -1,5 +1,5 @@
 import { AppShell, Text } from '@mantine/core';
-import { LaunchesCard } from './components/VegetableCard/LaunchCard'
+import { LaunchesCard } from './components/LaunchCard/LaunchCard'
 import { useAppContext } from '../../context';
 import React from 'react';
 

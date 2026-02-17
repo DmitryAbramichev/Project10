@@ -6,7 +6,6 @@ import { ModalPortal } from './components/ModalPortal';
 import type { Launches } from './types';
 import { AppContext } from './context';
 
-// Состояние модалки
 type State = {
   modalOpen: boolean;
   selectedLaunch: Launches | null;
@@ -53,7 +52,6 @@ function App() {
       <ModalPortal isOpen={state.modalOpen} onClose={handleCloseModal}>
         {state.selectedLaunch && (
           <>
-            {/* Здесь содержимое модалки: большая эмблема, название, ракета, детали */}
             <div style={{ textAlign: 'start' }}>
               <h2>{state.selectedLaunch.mission_name}</h2>
               {state.selectedLaunch.links?.mission_patch && (

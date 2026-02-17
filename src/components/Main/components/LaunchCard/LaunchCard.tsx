@@ -25,10 +25,8 @@ export function LaunchesCard({ launches }: LaunchesCardProps) {
         placeItems: 'center'
       }}
     >
-      {/* Картинка */}
       <Card.Section style={{ marginBottom: 16 }}>
         {' '}
-        {/* Отступ между картинкой и названием */}
         <Image
           src={launches.links.mission_patch_small}
           height={140}
@@ -41,14 +39,11 @@ export function LaunchesCard({ launches }: LaunchesCardProps) {
         />
       </Card.Section>
 
-      {/* Название */}
       <Group justify="center">
         {' '}
-        {/* Отступ между названием и ценой */}
         <Text fw={500}>{launches.mission_name}</Text>
       </Group>
 
-      {/* Цена и кнопка */}
         <Text fw={100} style={{ fontSize: '18px' }}>
           {launches.rocket.rocket_name}
         </Text>
