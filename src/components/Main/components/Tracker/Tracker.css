@@ -1,0 +1,11 @@
+.counter {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+}
+
+.counter:hover {
+  transition: 0.3s;
+  cursor: pointer;
+}
