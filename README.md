@@ -1,1 +1,1 @@
-Ссылка project9-ten.vercel.app
+Ссылка https://dmitryabramichev.github.io/Project10/
